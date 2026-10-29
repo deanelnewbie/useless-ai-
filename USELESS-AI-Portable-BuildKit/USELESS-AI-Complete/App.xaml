@@ -1,0 +1,17 @@
+<Application x:Class="UselessAI.App"
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+ StartupUri="MainWindow.xaml">
+ <Application.Resources>
+  <SolidColorBrush x:Key="Ink" Color="#08090D"/>
+  <SolidColorBrush x:Key="Panel" Color="#11131A"/>
+  <SolidColorBrush x:Key="Stroke" Color="#2A2E39"/>
+  <SolidColorBrush x:Key="Accent" Color="#A8C8FF"/>
+  <Style x:Key="RoundButton" TargetType="Button">
+   <Setter Property="Background" Value="#FF171921"/><Setter Property="Foreground" Value="#FFB8BECC"/><Setter Property="BorderBrush" Value="#FF292C37"/><Setter Property="BorderThickness" Value="1"/><Setter Property="FontSize" Value="13"/><Setter Property="Cursor" Value="Hand"/>
+   <Setter Property="Template"><Setter.Value><ControlTemplate TargetType="Button"><Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="14" Padding="5"><ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/></Border></ControlTemplate></Setter.Value></Setter>
+  </Style>
+  <Style x:Key="ToolButton" TargetType="Button"><Setter Property="Background" Value="#FF171A22"/><Setter Property="Foreground" Value="#FFE8EAF2"/><Setter Property="BorderBrush" Value="#FF2B2F3B"/><Setter Property="BorderThickness" Value="1"/><Setter Property="Margin" Value="0,0,6,0"/><Setter Property="Padding" Value="9"/><Setter Property="Cursor" Value="Hand"/><Setter Property="HorizontalContentAlignment" Value="Left"/><Setter Property="Template"><Setter.Value><ControlTemplate TargetType="Button"><Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="13" Padding="{TemplateBinding Padding}"><ContentPresenter/></Border></ControlTemplate></Setter.Value></Setter></Style>
+  <Style x:Key="SendButton" TargetType="Button"><Setter Property="Background" Value="#FFDCE8FF"/><Setter Property="Foreground" Value="#FF111827"/><Setter Property="BorderThickness" Value="0"/><Setter Property="FontSize" Value="17"/><Setter Property="Cursor" Value="Hand"/><Setter Property="Template"><Setter.Value><ControlTemplate TargetType="Button"><Border Background="{TemplateBinding Background}" CornerRadius="10"><ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/></Border></ControlTemplate></Setter.Value></Setter></Style>
+ </Application.Resources>
+</Application>

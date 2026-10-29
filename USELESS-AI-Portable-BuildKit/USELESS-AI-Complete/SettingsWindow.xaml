@@ -1,0 +1,12 @@
+<Window x:Class="UselessAI.SettingsWindow"
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+ Title="Pengaturan Useless AI" Width="330" Height="270" WindowStartupLocation="CenterOwner" ResizeMode="NoResize" Background="#FF0B0C11" Foreground="#FFF5F6FA">
+ <Border BorderBrush="#FF2A2E39" BorderThickness="1" CornerRadius="18" Padding="18"><StackPanel>
+  <TextBlock Text="Pengaturan" FontSize="18" FontWeight="SemiBold" Margin="0,0,0,16"/>
+  <CheckBox x:Name="SpeakCheck" Content="Suara sapaan dan jawaban" IsChecked="True" Foreground="#FFE6EAF3" Margin="0,0,0,12"/>
+  <TextBlock Text="Endpoint AI lokal" Foreground="#FF9DA3B3" FontSize="11"/>
+  <TextBlock Text="Ollama: http://localhost:11434" Foreground="#FFA8C8FF" FontSize="12" Margin="0,4,0,12"/>
+  <TextBlock Text="Model yang tersedia bergantung pada model yang diunduh. Untuk scan gambar, pilih model vision." TextWrapping="Wrap" Foreground="#FF9DA3B3" FontSize="11" Margin="0,0,0,18"/>
+  <StackPanel Orientation="Horizontal" HorizontalAlignment="Right"><Button Content="Batal" Width="76" Margin="0,0,8,0" Click="Cancel_Click"/><Button Content="Simpan" Width="76" Background="#FFDCE8FF" Foreground="#FF111827" Click="Save_Click"/></StackPanel>
+ </StackPanel></Border>
+</Window>

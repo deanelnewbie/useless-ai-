@@ -1,0 +1,17 @@
+<Window x:Class="UselessAI.PetWindow"
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+ Width="116" Height="132" WindowStyle="None" AllowsTransparency="True" Background="Transparent"
+ ResizeMode="NoResize" Topmost="True" ShowInTaskbar="False" Loaded="Pet_Loaded">
+ <Grid>
+  <StackPanel x:Name="PetStack" HorizontalAlignment="Center" VerticalAlignment="Center" MouseLeftButtonDown="Pet_Click">
+   <Grid Width="66" Height="60">
+    <Border x:Name="BotBody" Background="#FFF0F5FF" BorderBrush="#FFFFFFFF" BorderThickness="1" CornerRadius="19">
+     <Grid><StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center"><Ellipse x:Name="Eye1" Width="6" Height="10" Fill="#FF17233C" Margin="5,0"/><Ellipse x:Name="Eye2" Width="6" Height="10" Fill="#FF17233C" Margin="5,0"/></StackPanel><TextBlock Text="☁" FontSize="17" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,-9,-8,0"/></Grid>
+    </Border>
+    <Ellipse Width="7" Height="4" Fill="#FF9DBFFF" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="10,0,0,13"/><Ellipse Width="7" Height="4" Fill="#FF9DBFFF" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,13"/>
+   </Grid>
+   <Border Background="#E811131A" BorderBrush="#FF2A2E39" BorderThickness="1" CornerRadius="12" Padding="7,4" Margin="0,5,0,0"><TextBlock x:Name="Caption" Text="Hai! Klik aku" Foreground="#FFF2F4FA" FontSize="10" TextAlignment="Center"/></Border>
+  </StackPanel>
+ </Grid>
+</Window>
